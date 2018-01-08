@@ -1,0 +1,549 @@
+<?xml version="1.0"?>
+<QTM_Label_List_Ver_1.00>
+    <Trajectories>
+        <Trajectory>
+            <Name>L_IAS</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_IPS</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_IPS</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_IAS</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_TH1</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_TH2</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_TH3</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_TH4</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_SK1</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_SK2</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_SK3</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_SK4</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_FCC</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_FM1</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_FM2</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_FM5</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_TH1</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_TH2</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_TH3</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_TH4</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_SK1</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_SK2</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_SK3</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_SK4</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_FCC</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_FM1</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_FM2</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_FM5</Name>
+            <Color R="50" G="205" B="50"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_FTC</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_FTC</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_FLE</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_FME</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_FLE</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_FME</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_FAL</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_TAM</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_FAL</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_TAM</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>LBHD</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>RBHD</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>RFHD</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>LFHD</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>CLAV</Name>
+            <Color R="255" G="173" B="91"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>CV7</Name>
+            <Color R="255" G="173" B="91"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>STRN</Name>
+            <Color R="255" G="173" B="91"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>TV10</Name>
+            <Color R="255" G="173" B="91"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>LAC</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>RAC</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_RSP</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_USP</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_HL5</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_HM1</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>LF1</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>LF2</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>RF1</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>RF2</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_HL5</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_HM1</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_USP</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_RSP</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_HLE</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>L_HME</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_HME</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>R_HLE</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>LUA1</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>LUA2</Name>
+            <Color R="0" G="204" B="255"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>RUA1</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+        <Trajectory>
+            <Name>RUA2</Name>
+            <Color R="0" G="255" B="0"/>
+        </Trajectory>
+    </Trajectories>
+    <Bones>
+        <Color R="246" G="249" B="124"/>
+        <Thickness>20.000000</Thickness>
+        <Bone>
+            <Index Low="1" High="2"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="1" High="29"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="2" High="3"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="2" High="46"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="3" High="4"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="4" High="30"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="5" High="6"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="6" High="7"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="6" High="29"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="7" High="8"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="8" High="31"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="9" High="10"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="9" High="31"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="10" High="11"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="11" High="12"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="11" High="37"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="13" High="14"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="13" High="36"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="13" High="37"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="14" High="15"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="15" High="16"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="17" High="18"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="17" High="20"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="17" High="30"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="19" High="20"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="19" High="33"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="21" High="22"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="21" High="24"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="22" High="33"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="23" High="24"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="24" High="35"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="25" High="26"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="25" High="35"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="25" High="38"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="26" High="27"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="27" High="28"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="31" High="34"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="32" High="33"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="39" High="42"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="39" High="44"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="40" High="41"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="41" High="42"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="43" High="44"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="43" High="45"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="44" High="47"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="44" High="48"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="45" High="46"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="47" High="65"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="48" High="67"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="49" High="50"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="49" High="51"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="50" High="54"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="51" High="52"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="53" High="54"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="53" High="62"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="55" High="56"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="55" High="63"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="56" High="59"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="57" High="58"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="57" High="60"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="59" High="60"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="61" High="62"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="61" High="66"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="63" High="64"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="64" High="68"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="65" High="66"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+        <Bone>
+            <Index Low="67" High="68"/>
+            <Color R="246" G="249" B="124"/>
+        </Bone>
+    </Bones>
+</QTM_Label_List_Ver_1.00>
