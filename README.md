@@ -10,4 +10,9 @@ This repository also provides an extension to the MoCap Toolbox.
 
 An article describing and validating this method is under submission (PLoS ONE). If accepted, the reference will be provided here, and should be used to cite this work.
 
+Examples of MoCap data recovered with this method are displayed in the videos below (generated with the MotionMachine):
+
+* Rolling motion capture sequence recovery: https://youtu.be/bgRZOWVPcWU
+* Dancing and falling motion capture sequence recovery: https://youtu.be/Mq0NAZilIYY
+* Karate motion capture sequence recovery: https://youtu.be/BwDAmHU8MKA
 
