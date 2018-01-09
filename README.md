@@ -3,6 +3,7 @@
 Matlab implementation of an original method for automatic and robust MoCap data recovery, based on a probabilistic averaging of different individual MoCap data recovery models.
 
 This code requires the MoCap Toolbox for Matlab ( https://www.jyu.fi/hytk/fi/laitokset/mutku/en/research/materials/mocaptoolbox ):
+
 Burger, B. & Toiviainen, P. (2013). MoCap Toolbox – A Matlab toolbox for computational analysis of movement data. In R. Bresin (Ed.), Proceedings of the 10th Sound and Music Computing Conference, (SMC). Stockholm, Sweden: KTH Royal Institute of Technology.
 
 This repository also provides an extension to the MoCap Toolbox.
