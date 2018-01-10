@@ -13,7 +13,7 @@ This repository also provides an extension to the MoCap Toolbox.
 1. Download the repository (MocapRecovery)
 2. Download the [MoCap Toolbox](https://www.jyu.fi/hytk/fi/laitokset/mutku/en/research/materials/mocaptoolbox)
 3. Move the folder "mocaptoolbox" from the MoCap Toolbox to the MocapRecovery folder
-4. Try the script Example.m
+4. Follow the script Example.m
 
 ## Videos
 
