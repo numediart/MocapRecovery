@@ -8,7 +8,13 @@ Burger, B. & Toiviainen, P. (2013). MoCap Toolbox – A Matlab toolbox for compu
 
 This repository also provides an extension to the MoCap Toolbox.
 
-An article describing and validating this method is under submission (PLoS ONE). If accepted, the reference will be provided here, and should be used to cite this work.
+## Installation
+
+1. Download the repository (MocapRecovery)
+2. Download the [MoCap Toolbox](https://www.jyu.fi/hytk/fi/laitokset/mutku/en/research/materials/mocaptoolbox)
+3. Move the folder "mocaptoolbox" from the MoCap Toolbox to the MocapRecovery folder
+
+## Videos
 
 Examples of MoCap data recovered with this method are displayed in the videos below (generated with the [MotionMachine](https://github.com/numediart/ofxMotionMachine)):
 
@@ -16,3 +22,6 @@ Examples of MoCap data recovered with this method are displayed in the videos be
 * Dancing and falling motion capture sequence recovery: https://youtu.be/Mq0NAZilIYY
 * Karate motion capture sequence recovery: https://youtu.be/BwDAmHU8MKA
 
+## Reference
+
+An article describing and validating this method is under submission (PLoS ONE). If accepted, the reference will be provided here, and should be used to cite this work.
