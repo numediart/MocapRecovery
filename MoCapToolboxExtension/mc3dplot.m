@@ -19,6 +19,9 @@ Contact: mickaeltits@gmail.com or mickael.tits@umons.ac.be
  - myfighandle: handle to a figure (optional)
 %}
 
+if nargin < 2
+   p = mcinitanimpar(); 
+end
 if nargin < 3
     myfighandle = figure;
 end
