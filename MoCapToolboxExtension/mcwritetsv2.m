@@ -110,7 +110,7 @@ test = exist('d.other.dataIncluded','var');
 if test 
     fprintf(fid, '%s\n', d.other.dataIncluded); 
 else
-    fprintf(fid, ' --\n'); 
+    fprintf(fid, ' 3D\n'); %by default, we write 3D data
 end
 
 fprintf(fid, '%s\t', 'MARKER_NAMES');
