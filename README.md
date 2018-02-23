@@ -15,6 +15,10 @@ This repository also provides an extension to the MoCap Toolbox.
 3. Move the folder "mocaptoolbox" from the MoCap Toolbox to the MocapRecovery folder
 4. Follow the script Example.m
 
+## Method summary
+
+![Block diagram](BlockDiagram.tif)
+
 ## Videos
 
 Examples of MoCap data recovered with this method are displayed in the videos below (generated with the [MotionMachine](https://github.com/numediart/ofxMotionMachine)):
