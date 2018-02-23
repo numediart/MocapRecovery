@@ -17,7 +17,7 @@ This repository also provides an extension to the MoCap Toolbox.
 
 ## Method summary
 
-![Block diagram](BlockDiagram.tif)
+![Method block diagram](BlockDiagram.jpg)
 
 ## Videos
 
@@ -30,6 +30,3 @@ Examples of MoCap data recovered with this method are displayed in the videos be
 ## Reference
 
 An article describing and validating this method is under submission (PLoS ONE). If accepted, the reference will be provided here, and should be used to cite this work.
-
-The Github repository itself can be cited as:
-Mickael Tits. (2018, February 22). titsitits/MocapRecovery: First release (Version v1.0). Zenodo. http://doi.org/10.5281/zenodo.1182937
