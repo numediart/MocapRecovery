@@ -1,11 +1,11 @@
-function mc3dplot(d,p,myfighandle)
+function mc3dplot(d,p,myfighandle,speed)
 
 global isplaying;
 global gframeid;
 global gspeed;
 gspeed = 10;
 gframeid = 1;
-isplaying = false;
+isplaying = true;
 %{
 Created by Mickaël Tits, numediart Institute, University of Mons, Belgium
 21/12/2017
@@ -19,11 +19,15 @@ Contact: mickaeltits@gmail.com or mickael.tits@umons.ac.be
  - myfighandle: handle to a figure (optional)
 %}
 
-if nargin < 2
+if nargin < 2 || isempty(p)
    p = mcinitanimpar(); 
 end
 if nargin < 3
     myfighandle = figure;
+end
+
+if nargin == 4
+   gspeed = speed; 
 end
 
 try
@@ -47,6 +51,8 @@ p.maxz = nanmax(nanmax(allz));
 
 set(fig,'Position',[50 50 p.scrsize(1) p.scrsize(2)]);
 
+fig.CloseRequestFcn = @myclose_req;
+
 scatter3(1,1,1);%dummy plot to initialize view orientation
 plotframe(d,p,gframeid);
 
@@ -57,6 +63,7 @@ uislider.Callback = @(es,ed) plotframe(d,p,es.Value);
 
 uiplaystop =  uicontrol('Style', 'togglebutton', 'String', 'Play__Pause',...
     'Position', [20 40 100 20]);
+uiplaystop.Value = isplaying;
 uiplaystop.Callback = @(es,ed) playloop(d,p,es.Value);
 
 speedslider = uicontrol('Parent',fig,'Style','slider','Position',[130 40 200 20],...
@@ -66,13 +73,14 @@ speedslider.Callback = @(es,ed) setspeed(es.Value);
 
 %uislider.HandleVisibility = 'off';
 hold off;
-
+playloop(d,p,isplaying);
 end
 
 %%
 
 function plotframe(d,p,newframeid)
 
+global isplaying;
 global gframeid;
 gframeid = newframeid;
 if gframeid > d.nFrames
@@ -93,11 +101,21 @@ x = frame(1:3:end);
 y = frame(2:3:end);
 z = frame(3:3:end);
 hold off;
-scatter3(x,y,z,'b');
+if isempty(p.markercolors)
+    scatter3(x,y,z,'b');
+else
+    scatter3(x,y,z,36,p.markercolors);
+end
 hold on;
 try
-    for i = 1:length(p.conn)
-        plot3(x(p.conn(i,:)),y(p.conn(i,:)),z(p.conn(i,:)),'b');
+    if isempty(p.conncolors)
+        for i = 1:length(p.conn)
+            plot3(x(p.conn(i,:)),y(p.conn(i,:)),z(p.conn(i,:)),'b');
+        end
+    else
+        for i = 1:length(p.conn)
+            plot3(x(p.conn(i,:)),y(p.conn(i,:)),z(p.conn(i,:)),'Color',p.conncolors(i,:));
+        end
     end
 catch
     warning('Connections data does not correspond to markers data. Check your parameter p.conn, or simply remove it.');
@@ -109,7 +127,7 @@ view(az,el);
 try
     drawnow;
 catch
-    
+    isplaying = false;
 end
 end
 
@@ -148,3 +166,12 @@ function setspeed(speed)
 global gspeed;
 gspeed = speed;
 end
+
+function myclose_req(src,callbackdata)
+
+global isplaying;
+isplaying = false;
+closereq;
+
+end
+
