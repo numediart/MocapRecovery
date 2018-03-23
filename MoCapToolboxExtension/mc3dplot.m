@@ -5,7 +5,7 @@ global gframeid;
 global gspeed;
 gspeed = 10;
 gframeid = 1;
-isplaying = true;
+isplaying = false;
 %{
 Created by Mickaël Tits, numediart Institute, University of Mons, Belgium
 21/12/2017
