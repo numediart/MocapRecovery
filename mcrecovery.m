@@ -20,7 +20,7 @@ Inputs :
         o method1: local interpolation
         o method2: local polynomial regression
         o method3: local GRNN
-        o method4: global weighted linear regression
+        o method4: global linear regression
         o method5: weighted PCA (Gloersen et al. 2016 PLoS One)
 
     - spaceconstraint: use space constraint. (default: 1)
@@ -61,6 +61,8 @@ Inputs :
     deviations > combined_threshold, the references are not valid together for
     reconstruction. (default: inf)
     - smooth: smoothing parameter for grnn regression (default: 0.3)
+    - weightThres: weight threshold parameter for global linear regression 
+    method (default: 50 mm)
 
 Output: recovered sequence
 
@@ -275,6 +277,14 @@ if isfield(options,'smooth') && isnumeric(options.smooth)
 else
     smooth = 0.3;
 end
+
+%weight threshold parameter for global linear regression method (default: 50 mm)
+if isfield(options,'weightThres') && isnumeric(options.weightThres)
+    weightThres = options.weightThres;
+else
+    weightThres = 50;
+end
+
 
 %% First check if there are missing data
 [~, ~, mgrid] = mcmissing(mysequence);
@@ -555,20 +565,16 @@ for k=miss
             refidx = find(refset);
             tmp = mcgetmarker(mysequence,refidx);
             X = tmp.data;
-            linpredictor = [ ones(nframes,1) featureNormalize(X)];
+            linpredictor = [ ones(nframes,1) X];
             
             %Ponderate predictors according to distance variability
-            weights = distances(k,refset);
-            weightScale = 20;% [mm], the sigma of the gaussian curve
-            weights = exp(-weights.^2./(2*weightScale.^2));
-            if max(weights) < 10^-1
+            weights = distances(k,refset);            
+            if min(weights) > weightThres
                 weights = ones(size(weights));
             end
-            weights = [1 reshape([1 1 1]'*weights,1,[])];
-            avoidids = weights <= 0.05;
+             weights = [1 reshape([1 1 1]'*weights,1,[])];
+            avoidids = weights > weightThres;
             linpredictor(:,avoidids)=[];
-            weights(avoidids) = [];
-            linpredictor = bsxfun(@times,linpredictor,weights);
             
             regressand = p0;
             
