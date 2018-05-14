@@ -840,17 +840,13 @@ for k=miss
         
         %%% Train regression models
         
-        %%% Predictors: local coordinates of P1,P2,P3, and distances
+        %%% Predictors: local coordinates of P1,P2,P3
         d12 = sqrt(sum((p1-p2).^2,2));
-        d13 = sqrt(sum((p1-p3).^2,2));
-        d23 = sqrt(sum((p2-p3).^2,2));
         %projection of P1 is (zeros, zeros, zeros) (new origin)
         %projection of P2 is (d12, zeros, zeros)
-        %projection of P3 is (P3p_x, 0, P3p_z), where :
-        %d13² = P3p_x²+P3p_z²
-        %d23² = P3p_z²+(P3p_x-d12)²
+        %projection of P3 is (P3p_x, 0, P3p_z)
         p3p = projection3D(p1, p2, p3, p3);
-        X=[d12 p3p(:,[1 3]) d13 d23];%
+        X=[d12 p3p(:,[1 3])];%
         linpredictor = [ ones(nframes,1) featureNormalize(X)];
         X=mapFeatureMat(X,2); % polynomial version
         polypredictor = [ ones(nframes,1) featureNormalize(X)];
@@ -891,8 +887,7 @@ for k=miss
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Polynomial regression on local data (3 references) with
         % continuity correction - Training
-        % Used input data: local coordinates of references, and
-        % distances between them (i.e. 5 non-zero components)
+        % Used input data: local coordinates of references
         coeffs = cell(3,1);
         if method2
             for ax=1:3 %regression on each axis
@@ -1052,44 +1047,7 @@ for k=miss
                     
                 end
                 
-                
-                
-%                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                 % Kernel smoothing regression - prediction and continuity correction
-%                 if method6
-%                     temp = p0p(id0:id1,:);
-%                     for ax=1:3
-%                         %pred = polypredictor(id0:id1,:)*coeffs{ax};
-%                         %pred = kdtree_ksrmv(linpredictors,regressands(:,ax),[],linpredictor(id0:id1,:));
-%                         pred = ksrmv(linpredictors,regressands(:,ax),[],linpredictor(id0:id1,:));
-%                         pred=pred.f*sigma(ax)+mu(ax);
-%                         temp(:,ax)=pred;
-%                         if timeconstraint
-%                             if id0==1
-%                                 Dt1=0;
-%                             else
-%                                 Dt1 = temp(1,ax)-p0p(id0,ax);
-%                             end
-%                             if id1 == nframes
-%                                 Dt2=0;
-%                             else
-%                                 Dt2 = temp(end,ax)-p0p(id1,ax);
-%                             end
-%                             
-%                             if id0 == 1 && id1 ~= nframes
-%                                 Dt1 = Dt2;
-%                             elseif id1 == nframes && id0 ~= 1
-%                                 Dt2 = Dt1;
-%                             end
-%                             
-%                             correction = -linspace(Dt1,Dt2,gapsize+2)'; %linear ramp correction
-%                             temp(:,ax) = temp(:,ax)+correction;
-%                         end
-%                     end
-%                     %Inverse projection
-%                     locksr = projection3D(p1m, p2m, p3m, temp, 1);
-%                 end
-%                 
+        
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 % Model averaging
                 %(based on distance probabilities distribution estimation)
