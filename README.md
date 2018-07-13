@@ -32,4 +32,5 @@ Examples of MoCap data recovered with this method are displayed in the videos be
 ## Reference
 
 This research can be cited as:
+
 Tits M, Tilmanne J, Dutoit T (2018) Robust and automatic motion-capture data recovery using soft skeleton constraints and model averaging. PLoS ONE 13(7): e0199744. https://doi.org/10.1371/journal.pone.0199744
