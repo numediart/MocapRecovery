@@ -31,6 +31,5 @@ Examples of MoCap data recovered with this method are displayed in the videos be
 
 ## Reference
 
-An article describing and validating this method is under submission (PLoS ONE). If accepted, the reference will be provided here, and should be used to cite this work.
-
-This repository can also be cited as: Mickael Tits. (2018, February 22). titsitits/MocapRecovery: First release (Version v1.0). Zenodo. http://doi.org/10.5281/zenodo.1182937
+This research can be cited as:
+Tits M, Tilmanne J, Dutoit T (2018) Robust and automatic motion-capture data recovery using soft skeleton constraints and model averaging. PLoS ONE 13(7): e0199744. https://doi.org/10.1371/journal.pone.0199744
